@@ -30,7 +30,6 @@ const App = () => {
   useEffect(() => {
     fetchData();
   }, [])
-  
 
   return (
     <div className="min-h-screen flex flex-col bg-bgDark2">
@@ -53,10 +52,6 @@ const App = () => {
         (<div>No Courses Found</div>) : 
         (loading ? (<Spinner/>) : (<Cards courses={courses} category={category}/>))
         }
-
-          {/* {
-            loading ? (<Spinner/>) : (<Cards courses={courses} category={category}/>)
-          } */}
         </div>
       </div>
 
